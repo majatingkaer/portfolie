@@ -121,6 +121,8 @@ footer {
 	margin: 2vw 22vw 10vw 22vw;
 }
 
+
+
 h2 {
 	color: #043511;
 	position: absolute;
@@ -148,6 +150,7 @@ h4 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.2rem;
 	margin-left: 20vw;
+	margin-top: 15vw;
 	max-width: 60vw;
 }
 
@@ -266,25 +269,6 @@ h4 a:hover {
 	padding: 1vw 25vw 1vw 25vw;
 }
 
-/*.web {
-	flex-basis: 200px;
-	margin-top: 5vw;
-	margin-left: 25vw;
-}
-
-.animation,
-.ux,
-.indhold {
-	flex-basis: 200px;
-	margin-top: 2vw;
-	margin-left: 25vw;
-}*/
-/*
-.tema {
-	flex-grow: 2;
-	flex-basis: 200px;
-	max-width: 350px;
-}*/
 
 #portfolio img:hover {
 	transition: .2s ease-out;
@@ -424,6 +408,11 @@ h4 a:hover {
 
 
 /*** INDHOLD ***/
+video {
+	width: 80vw;
+	padding-left: 17vw;
+	padding-top: 5vw;
+}
 
 #indhold {
 	background-image: url(billeder/background_portfolio-02.svg);
@@ -432,21 +421,73 @@ h4 a:hover {
 	min-height: 48vw;
 }
 
-#indhold .indhold_wrap_video {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.wrap_text_1 {
+.indhold_text {
 	color: #043511;
 	font-family: 'Poppins', sans-serif;
-	margin: 0vw 22vw 10vw 22vw;
+	padding: 0vw 22vw 0vw 22vw;
 }
 
+.indhold_text_top {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	padding: 15vw 22vw 1vw 22vw;
+}
 
+.indhold_text_bottom_top {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	padding: 0vw 22vw 1vw 22vw;
+}
+
+.indhold_text_video {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	padding: 0vw 22vw 1vw 22vw;
+}
+
+.indhold_text_redesign {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	padding: 0vw 22vw 1vw 22vw;
+}
+
+.indhold_test {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	padding: 0vw 22vw 10vw 22vw;
+}
 
 @media only screen and (min-width:600px) {
+	video {
+		width: 65vw;
+		padding-left: 30vw;
+	}
+
+	.indhold_text {
+		padding: 0vw 22vw 5vw 22vw;
+	}
+
+	.indhold_text_top {
+		color: #043511;
+		font-family: 'Poppins', sans-serif;
+		padding: 8vw 22vw 0vw 22vw;
+	}
+
+	.indhold_text_bottom_top {
+		color: #043511;
+		font-family: 'Poppins', sans-serif;
+		padding: 0vw 22vw 0vw 22vw;
+	}
+
+	#indhold h4 {
+		margin-top: 5vw;
+	}
+
+	#indhold h5 {
+		margin-bottom: 0vw;
+		margin-left: 22vw;
+	}
+
 	.tilbage_knap {
 		max-width: 40px;
 		padding-top: 9vw;
