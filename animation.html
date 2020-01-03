@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Majas portfolio for 1. semester</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Forside</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="om.html">Om</a>
+		</nav>
+	</header>
+	<section id="animation">
+		<h2>Grundlæggende animation</h2>
+		<h3><a href="http://majatingkaer.dk/kea/04_animation/spil/index.html/" target="_blank">// 04.04.01 - Mit eget spil, Lonely Monkey</a></h3>
+		<div class="tilbage_knap">
+			<a href="portfolio.html"><img src="billeder/pil.svg" alt="tilbage"></a>
+		</div>
+
+
+		<div class="beskrivelse_top">
+			<p>I den første halvdel af dette forløb lærte jeg igennem JavaScript og CSS-animationer at producere mit eget animationsspil. Jeg havde til opgave selv at udvikle det grafiske udtryk i spillet herunder forside, baggrund, karakterdesign samt de forskellige UI-elementer som point-tæller, liv-bar og nedtælling af tid.</p>
+			<p>Historien bag mit spil omhandler en abe, som er blevet væk fra sine abe-venner i junglen. Spillet går så ud på, at man har til opgave at fange disse abe-venner. Man skal dog passe på, at man ikke klikker på enten den farlige tiger eller den farlige slange, for så mister man ét liv. Hvis man derimod klikker på en abeven, får man tildelt 2 point. Spillet er vundet, når man har fået samlet 20 point. Man har kun 20 sekunder til at skaffe sig de 20 point, ellers er det game over!</p>
+			<p>I denne procces lavede jeg også et <a href="billeder/moodboard_lonelymonkey.png" target="_blank">moodboard</a> og så lærte vi noget helt nyt: at lave både et <a href="billeder/aktivitetsdiagram_lonelymonkey.png" target="_blank">aktivitetsdiagram</a> og et <a href="billeder/statemachinediagram_lonelymonkey.png" target="_blank">state-machine diagram</a> også. Et aktivitetsdiagram fortæller hvilke aktiviteter der er i et spil og hvad der sker, når man udfører dem. Et state-machine diagram er så den detaljerede version, hvor man kalder hvert et “state” dét, som det kommer til at hedde i ens JavaScript. Det minder på den måde meget om et layoutdiagram, da det er med til at gøre det nemmere at bygge sin kodning op, hvis man har disse “opskrifter” at gå efter for det samlede overblik. </p>
+		</div>
+		<div class="sectionwrapper">
+			<div class="big_monkey_pic">
+				<img class="happy" src="billeder/big_monkey_happy.svg" alt="happy_monkey">
+				<img class="normal" src="billeder/big_monkey.svg" alt="monkey">
+			</div>
+			<div class="animation_text_flex">
+				<p>Mit designvalg endte med at være inspireret af flat-design. Enkle former, få flader. Og en monokromatisk tilgang mht. farvevalget. Mine <a href="billeder/assetliste_lonelymonkey.png" target="_blank">karakterer og UI-elementer</a> har bløde former og runde kanter, mens spil-baggrunden med træer og planter er mere skarpe og kantede linjer. Dette var med til at give spil-billedet lidt mere liv. Jeg forsøgte mig også med at skabe dybde i <a href="billeder/screens_lonelymonkey.png" target="_blank">spil-billedet</a>, ved at gøre de bagerste træer mest lyse, og dem tættest på mest mørke.<br>Jeg tilegnede mig nogle rigtig gode egenskaber i Illustrator i dette forløb under design processen.</p>
+			</div>
+		</div>
+		<div class="beskrivelse_bottom">
+			<p>Desværre virker spillet ikke optimalt. Nogle gange mister man liv, selvom man trykker på abe-vennerne og “spil-igen” knappen virker ikke på levelComplete-skærmen og sidst, men ikke mindst, formår spillet ikke at resette, når man når frem til gameOver eller levelComplete. </p>
+		</div>
+
+
+		<h4><a href="http://majatingkaer.dk/kea/04_animation/delingsdilemmaet/" target="_blank">// 04.04.01a - Gruppespil, DelingsDilemmaet</a></h4>
+		<div class="beskrivelse_bottom">
+			<p>Anden halvdel af animations-forløbet foregik i grupper. Her skulle vi sammen udforme et animationsspil i samarbejde med Sex og Samfund og deres underorganisation “Privat Snak” omkring billeddeling. </p>
+			<div class="animation_flex">
+				<div class="animation_text_flex_2">
+					<h5>Handling</h5>
+					<p>Delings Dilemmaet er et klik spil hvori man bliver sat over otte forskellige dilemmaer der omhandler deling af nøgenbilleder. Man kan vælge om man vil sende billedet videre, eller om man vil slette det. Spillet har til formål at give indsigt i de konsekvenser deling af nøgenbilleder af mindreårige kan have, samt oplyse om hvad man kan dele og hvad man ikke kan dele når det kommer til privat personer. </p>
+				</div>
+				<div class="logo_dd">
+					<img src="billeder/logo.svg" alt="delingsdilemmaet">
+				</div>
+			</div>
+			<h5>Proces</h5>
+			<p>Vi startede ud med at blive introduceret til brugen af <a href="https://trello.com/b/BYqqIjdQ/gruppe-15" target="_blank">trelloboard</a>, som er et smart værktøj, som er god til at skabe et samlet overblik over, hvad der står på ens to-do liste, hvad man er igang med og hvad man stadig mangler at få lavet. Det endte ud i at vi fik lavet et <a href="billeder/burndownchart.jpg" target="_blank">burndown-chart</a>, som viste, hvor mange ting der stod på todo-listen i starten af dagen kontra sidst på dagen via. en graf.
+				<br>Hver dag startede vi med at lave en daily-scrum, hvor alle lige fortalte, hvad de havde lavet siden sidst og hvad planen skulle være for den kommende dag.
+				<br>Vi lavede et samlet dokumentationssite, som indeholdte dokumentation fra hele processen.
+			</p>
+			<h5>Målgruppe</h5>
+			<p>Vores målgruppe var på forhånd sat til 13-15 årige.
+				<br>Vi lavede et interview med en teenager for at finde ud af, om vi skulle fokusere på sårbarheden af offeret, hvis billede bliver delt, eller fokusere på konsekvenserne og straf af delingen. Her fortalte de, at det ville være konsekvenser og straf, som havde den bedste påvirkning. Vi endte derfor med at designe en <a href="billeder/dd_gameover.png" target="_blank">game-over skærm</a>, som viser et par i fængsel, frem for at vise en trist person.
+				Derudover havde vi en <a href="billeder/dd_levelcomplete.png" target="_blank">level-complete skærm</a>, som skulle give et ordenligt klap på skulderen for, at de havde valgt at slette alle de billeder, man ikke måtte sende videre og samtidigt opfordre til at fortælle sine venner om, hvad man ikke bør dele.
+				Sidst valgte vi også at have en <a href="billeder/dd_passiv.png" target="_blank">passiv slut-skærm</a>, som man fik, hvis man havde slettet alle billederne som blev vist. Der var nemlig nogle få billeder, som man faktisk gerne måtte sende videre. Denne skærm havde så til formål også at rose for valget, men også påpege, at man ikke blvier straffet for at sende noget videre, som man gerne må sende videre.
+			</p>
+		</div>
+	</section>
+	<footer>Multimediedesign - 1. semester - KEA 2019 - Maja Tingkær</footer>
+	<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,643 @@
+/*** GENERELLE INDSTILLINGER ***/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	background-color: white;
+
+}
+
+img {
+	width: 100%
+}
+
+header nav {
+	width: 100%;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+}
+
+header nav a {
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	color: grey;
+}
+
+/*@media only screen and (min-width:600px) {
+	header nav {
+		width: 100%;
+		position: fixed;
+		z-index: 2;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	header nav a {
+		color: white;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.3rem;
+		padding: 5px;
+		text-decoration: none;
+	}
+
+	header nav a:hover {
+		color: grey;
+	}
+
+	#splash_1 {
+		width: 100vw;
+		height: 50vw;
+	}
+}*/
+
+footer {
+	position: fixed;
+	color: grey;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	bottom: 0;
+}
+
+/*** FORSIDE ***/
+.splash_1 {
+	background-image: url(billeder/splash_portfolio-03_green.svg);
+	/*
+	background-size: cover;*/
+	width: 100vw;
+	height: 127vw;
+	/*
+	position: absolute;*/
+}
+
+.splash_2 {
+	background-image: url(billeder/splash_portfolio-03_red.svg);
+	background-size: cover;
+	width: 75vw;
+	height: 44vw;
+	right: 12vw;
+	top: 20vw;
+	position: absolute;
+}
+
+/*** GENERELLE INDSTILLINGER FOR ANDRE SIDER END FORSIDEN ***/
+/*.baggrund {
+	background-image: url(billeder/background_portfolio-02.svg);
+	background-size: cover;
+	width: 100vw;
+	min-height: 48vw;
+	position: absolute;
+}*/
+
+.tilbage_knap {
+	max-width: 40px;
+	padding-top: 8vw;
+	margin-left: 20vw;
+}
+
+.beskrivelse {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	margin: 20vw 22vw 10vw 22vw;
+}
+
+.beskrivelse_top {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	margin: 25vw 22vw 10vw 22vw;
+}
+
+.beskrivelse_bottom {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	margin: 2vw 22vw 10vw 22vw;
+}
+
+h2 {
+	color: #043511;
+	position: absolute;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+	left: 20vw;
+	top: 10vw;
+}
+
+h3 {
+	color: white;
+	position: absolute;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	left: 20vw;
+	top: 17vw;
+	max-width: 60vw;
+
+}
+
+h4 {
+	color: #043511;
+	/*
+	position: absolute;*/
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	margin-left: 20vw;
+	max-width: 60vw;
+}
+
+h5 {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	margin: 0vw;
+}
+
+p a:link {
+	text-decoration: none;
+	font-weight: 900;
+	color: #043511;
+}
+
+p a:visited {
+	text-decoration: none;
+	font-weight: 900;
+	color: #043511;
+}
+
+p a:hover {
+	text-decoration: none;
+	font-weight: 900;
+	color: #a2e6b4;
+}
+
+
+h3 a:link,
+h4 a:link {
+	padding: 2px 7px 2px 7px;
+	text-decoration: none;
+	background-color: #a2e6b4;
+	box-shadow: 1px 1px 2px #043511;
+	color: white;
+	border-radius: 10px;
+}
+
+h3 a:visited,
+h4 a:visited {
+	text-decoration: none;
+	background-color: #a2e6b4;
+	color: white;
+	border-radius: 10px;
+}
+
+h3 a:hover,
+h4 a:hover {
+	text-decoration: none;
+	font-weight: 900;
+	background-color: #043511;
+	color: white;
+}
+
+/*** OM-SIDE ***/
+
+#om {
+	background-image: url(billeder/background_portfolio-02.svg);
+}
+
+.column_pic,
+.column_text {
+	flex-basis: 350px;
+	flex-grow: 1;
+}
+
+.om_pic {
+	padding: 25vw 0vw 0vw 22vw;
+	max-width: 380px;
+}
+
+#om img {
+	border-radius: 50%
+}
+
+#om img:hover {
+	transition: .2s ease-out;
+	transform: scale(1.1);
+}
+
+.om_text {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	padding: 0vw 22vw 1vw 22vw;
+}
+
+
+
+/*** PORTFOLIO-SIDE ***/
+#portfolio {
+	background-image: url(billeder/background_portfolio-02.svg);
+	background-size: 100%;
+	width: 100vw;
+	min-height: 48vw;
+}
+
+
+/*#portfolio img {
+	max-width: 80vw;
+}*/
+
+.sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.col_top,
+.col_bottom {
+	flex-basis: 350px;
+	flex-grow: 1;
+}
+
+.tema {
+	padding: 1vw 25vw 1vw 25vw;
+}
+
+/*.web {
+	flex-basis: 200px;
+	margin-top: 5vw;
+	margin-left: 25vw;
+}
+
+.animation,
+.ux,
+.indhold {
+	flex-basis: 200px;
+	margin-top: 2vw;
+	margin-left: 25vw;
+}*/
+/*
+.tema {
+	flex-grow: 2;
+	flex-basis: 200px;
+	max-width: 350px;
+}*/
+
+#portfolio img:hover {
+	transition: .2s ease-out;
+	transform: scale(1.1);
+	border-radius: 5px;
+}
+
+/*** WEB ***/
+#web {
+	background-image: url(billeder/background_portfolio-02.svg);
+	background-size: 100%;
+	max-width: 100vw;
+	min-height: 48vw;
+}
+
+#web .sectionwrapper {
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+.ikon_pic,
+.web_text_bottom {
+	flex-basis: 350px;
+	flex-grow: 1;
+}
+
+.ikon_pic {
+	max-width: 300px;
+	/*
+	padding: 20vw 0vw 0vw 0vw;*/
+}
+
+.web_text_top {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	padding: 15vw 20vw;
+}
+
+.web_text_bottom {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	padding: 2vw 20vw;
+}
+
+#web img {
+	border-radius: 50%;
+}
+
+#web img:hover {
+	transition: .2s ease-out;
+	transform: scale(1.1);
+	border-radius: 0%;
+}
+
+/*** UX ***/
+
+#ux {
+	background-image: url(billeder/background_portfolio-02.svg);
+	background-size: 100%;
+	max-width: 100vw;
+	min-height: 48vw;
+}
+
+#ux .sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/*** ANIMATION ***/
+
+#animation {
+	background-image: url(billeder/background_portfolio-02.svg);
+	background-size: 100%;
+	max-width: 100vw;
+	min-height: 48vw;
+}
+
+#animation .sectionwrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#animation p {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 0vw;
+	margin-bottom: 6vw;
+}
+
+.big_monkey_pic,
+.animation_text_flex {
+	flex-basis: 350px;
+	flex-grow: 1;
+}
+
+.big_monkey_pic {
+	max-width: 200px;
+	position: relative;
+	/*
+	width: 640px;
+	height: 850px;
+	margin: 0 auto;*/
+}
+
+.big_monkey_pic img {
+	position: absolute;
+}
+
+.big_monkey_pic img.normal:hover {
+	transition: .2s ease-out;
+	transform: scale(1.1);
+	opacity: 0;
+}
+
+.animation_text_flex {
+	padding: 55vw 22vw 1vw 22vw;
+}
+
+.animation_flex {
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+.animation_text_flex_2,
+.logo_dd {
+	flex-basis: 350px;
+	flex-grow: 1;
+}
+
+.animation_flex img:hover {
+	transition: .2s ease-out;
+	transform: scale(1.1);
+}
+
+
+/*** INDHOLD ***/
+
+#indhold {
+	background-image: url(billeder/background_portfolio-02.svg);
+	background-size: 100%;
+	max-width: 100vw;
+	min-height: 48vw;
+}
+
+#indhold .indhold_wrap_video {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wrap_text_1 {
+	color: #043511;
+	font-family: 'Poppins', sans-serif;
+	margin: 0vw 22vw 10vw 22vw;
+}
+
+
+
+@media only screen and (min-width:600px) {
+	.tilbage_knap {
+		max-width: 40px;
+		padding-top: 9vw;
+		margin-left: 20vw;
+	}
+
+	.beskrivelse {
+		margin: 9vw 22vw 1vw 22vw;
+	}
+
+	.beskrivelse_top {
+		margin: 10vw 22vw 5vw 22vw;
+	}
+
+	h3 {
+		left: 20vw;
+		top: 13vw;
+	}
+
+	.om_pic {
+		padding: 1vw;
+		margin-top: 12vw;
+		margin-left: 19vw;
+	}
+
+	.om_text {
+		padding: 12vw 19vw 1vw 1vw;
+	}
+
+	#om h2 {
+		top: 6vw
+	}
+
+	#om {
+		background-image: url(billeder/background_portfolio-02.svg);
+		background-size: 100%;
+		min-height: 48vw;
+	}
+
+	#portfolio {
+		background-image: url(billeder/background_portfolio-02.svg);
+		background-size: 100%;
+		min-height: 48vw;
+	}
+
+	#animation {
+		background-image: url(billeder/background_portfolio-02.svg);
+		background-size: 100%;
+		min-height: 193vw;
+	}
+
+	#web {
+		background-image: url(billeder/background_portfolio-02.svg);
+		background-size: 100%;
+		min-height: 80vw;
+	}
+
+	.ikon_pic {
+		margin-right: 18vw;
+		padding-top: 8vw;
+	}
+
+	.web_text_top {
+		padding: 8vw 22vw 0vw 22vw;
+	}
+
+	.web_text_bottom {
+		padding: 0vw 2vw 10vw 22vw
+	}
+
+	#animation p {
+		margin-bottom: 3vw;
+	}
+
+	.animation_text_flex {
+		margin-right: 1vw;
+		padding: 1vw 22vw 1vw 2vw;
+	}
+
+	.big_monkey_pic {
+		margin-left: 22vw
+	}
+
+	.logo_dd {
+		margin-top: 3vw;
+		padding-left: 2vw;
+	}
+
+
+	/*** MENU ***/
+	header nav {
+		width: 100%;
+		position: fixed;
+		z-index: 2;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	header nav a {
+		color: white;
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.3rem;
+		padding: 5px;
+		text-decoration: none;
+	}
+
+	header nav a:hover {
+		color: grey;
+	}
+
+	/*** FORSIDE SPLASH ***/
+	.splash_1 {
+		background-size: cover;
+		position: absolute;
+		width: 100vw;
+		height: 48vw;
+	}
+
+	.splash_2 {
+		width: 50vw;
+		height: 29vw;
+		right: 25vw;
+		top: 12vw;
+	}
+
+	/*	#portfolio {
+		background-image: url(billeder/background_portfolio-02.svg);
+		background-size: 100%;
+		width: 100vw;
+		min-height: 48vw;
+		position: absolute;
+		display: flex;
+		flex-wrap: wrap;
+	}*/
+	/*
+	#om {
+		display: flex;
+		flex-wrap: wrap;
+	}*/
+
+	/*	.tema {
+		padding: 1vw 15vw 1vw 15vw;
+	}*/
+
+
+	.web {
+		padding: 2vw 3vw 1vw 26vw;
+	}
+
+	.animation {
+		padding: 1vw 3vw 1vw 26vw;
+	}
+
+	.ux {
+		padding: 2vw 26vw 1vw 3vw;
+	}
+
+	.indhold {
+		padding: 1vw 26vw 1vw 3vw;
+	}
+
+	/*** Det så rigtigt ud med disse tal, når den ikke stod i media query - kan ikke få det til at flexe korrekt op ved siden ad hinanden... */
+	/*	#om .sectionwrapper img {
+		margin-left: 20vw;
+		margin-top: 16vw;
+		max-width: 23vw;
+		max-height: 23vw;
+	}
+
+	#om .column_pic {
+		flex-basis: 200px;
+		flex-grow: 1;
+	}
+
+	#om .column_text {
+		flex-basis: 200px;
+		flex-grow: 1;
+		color: #043511;
+		font-family: 'Poppins', sans-serif;
+		margin-right: 20vw;
+		margin-top: 15vw;
+		max-width: 35vw;
+	}*/
+
+	/*	#portfolio .sectionwrapper {
+		flex-basis: 300px;
+		flex-grow: 2;
+		flex-direction: row;
+	}*/
+
+	/*	#portfolio .tema {
+		margin: 5rem;
+	}*/
+}
