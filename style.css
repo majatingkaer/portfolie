@@ -88,6 +88,11 @@ footer {
 	position: absolute;
 }
 
+.splash_2:hover {
+	transition: .2s ease-out;
+	transform: scale(1.1);
+}
+
 /*** GENERELLE INDSTILLINGER FOR ANDRE SIDER END FORSIDEN ***/
 /*.baggrund {
 	background-image: url(billeder/background_portfolio-02.svg);
@@ -295,7 +300,7 @@ h4 a:hover {
 }
 
 .ikon_pic {
-	max-width: 300px;
+	max-width: 250px;
 	/*
 	padding: 20vw 0vw 0vw 0vw;*/
 }
@@ -312,14 +317,13 @@ h4 a:hover {
 	padding: 2vw 20vw;
 }
 
-#web img {
+/*#web img {
 	border-radius: 50%;
-}
+}*/
 
 #web img:hover {
 	transition: .2s ease-out;
 	transform: scale(1.1);
-	border-radius: 0%;
 }
 
 /*** ANIMATION ***/
@@ -426,6 +430,20 @@ video {
 	padding: 0vw 22vw 1vw 22vw;
 }
 
+.billeder_header {
+	max-width: 320px;
+	margin-left: 16vw;
+}
+
+.old {
+	margin-top: 10vw;
+	margin-bottom: 5vw;
+}
+
+.new {
+	margin-bottom: 5vw;
+}
+
 .indhold_text_video {
 	color: #043511;
 	font-family: 'Poppins', sans-serif;
@@ -437,6 +455,7 @@ video {
 	font-family: 'Poppins', sans-serif;
 	padding: 0vw 22vw 1vw 22vw;
 }
+
 
 .indhold_test {
 	color: #043511;
@@ -544,10 +563,15 @@ video {
 		margin-left: 10vw;
 	}
 
+	.foto_wrapper {
+		margin-bottom: 8vw;
+	}
+
 
 	.designsprint_pic {
 		margin-left: 0vw;
 		margin-right: 22vw;
+		margin-top: 3vw;
 	}
 
 	.designsprint_text {
@@ -573,6 +597,20 @@ video {
 		color: #043511;
 		font-family: 'Poppins', sans-serif;
 		padding: 0vw 22vw 0vw 22vw;
+	}
+
+	.billeder_header {
+		max-width: 730px;
+		margin-left: 22vw;
+	}
+
+	.old {
+		margin-top: 5vw;
+		margin-bottom: 3vw;
+	}
+
+	.new {
+		margin-bottom: 3vw;
 	}
 
 	#indhold h4 {
@@ -617,14 +655,15 @@ video {
 		top: 6vw
 	}
 
-	///* BAGGRUND ***/
-	#om {
+	/*** BAGGRUND ***/
+
+	#portfolio {
 		background-image: url(billeder/background_portfolio-02.svg);
 		background-size: 100%;
 		min-height: 48vw;
 	}
 
-	#portfolio {
+	#om {
 		background-image: url(billeder/background_portfolio-02.svg);
 		background-size: 100%;
 		min-height: 48vw;
@@ -644,7 +683,7 @@ video {
 
 	/*** WEB ***/
 	.ikon_pic {
-		margin-right: 18vw;
+		margin-right: 20vw;
 		padding-top: 8vw;
 	}
 
