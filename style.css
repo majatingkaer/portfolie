@@ -78,12 +78,10 @@ footer {
 /*** FORSIDE ***/
 .splash_1 {
 	background-image: url(billeder/green.png);
-	/*
-	background-size: cover;*/
+	background-size: cover;
 	width: 100vw;
 	height: 127vw;
-	/*
-	position: absolute;*/
+	position: absolute;
 }
 
 .splash_2 {
@@ -114,6 +112,7 @@ footer {
 	max-width: 40px;
 	padding-top: 8vw;
 	margin-left: 20vw;
+	z-index: 1;
 }
 
 /*.beskrivelse {
@@ -342,6 +341,39 @@ h4 a:hover {
 }
 
 /*** ANIMATION ***/
+#animation h2 {
+	animation-name: zoom_in_kf;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 1;
+}
+
+/*@keyframes rotate_kf {
+	0% {
+		transform: rotate(0)
+	}
+
+	100% {
+		transform: rotate(360deg)
+	}
+}*/
+
+@keyframes zoom_in_kf {
+	0% {
+		transform: scale(0)
+	}
+
+	50% {
+		transform: scale(2.5)
+	}
+
+	100% {
+		transform: scale(1)
+	}
+}
+
 #animation h3 {
 	top: 35vw;
 }
@@ -674,6 +706,7 @@ video {
 	.tilbage_knap {
 		max-width: 40px;
 		margin-left: 20vw;
+		z-index: 1;
 	}
 
 	h3 {
